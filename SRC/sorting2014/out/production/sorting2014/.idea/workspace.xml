@@ -67,28 +67,28 @@
       <file leaf-file-name="SortDemo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="67" selection-start="3969" selection-end="3969" vertical-scroll-proportion="0.5826514" vertical-offset="2653" max-vertical-offset="3264">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MergeSort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting2014/MergeSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="18" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1513">
+            <state line="23" column="2" selection-start="691" selection-end="691" vertical-scroll-proportion="0.64675325" vertical-offset="142" max-vertical-offset="2924">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1876#1888#0" expanded="true" />
+                <element signature="e#0#5195#0" expanded="true" />
+                <element signature="e#399#429#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SelectionSort.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sorting2014/SelectionSort.java">
+      <file leaf-file-name="QuickSort.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sorting2014/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1462" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2176">
+            <state line="95" column="22" selection-start="3452" selection-end="3452" vertical-scroll-proportion="0.0" vertical-offset="1344" max-vertical-offset="1955">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilityMethods.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sortingUtilities/UtilityMethods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="52" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -104,11 +104,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sorting2014/MakeDataFile.java" />
-        <option value="$PROJECT_DIR$/sorting2014/QuickSort.java" />
         <option value="$PROJECT_DIR$/sorting2014/ShellSort.java" />
-        <option value="$PROJECT_DIR$/sorting2014/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/sorting2014/MakeDataFile.java" />
         <option value="$PROJECT_DIR$/sorting2014/MergeSort.java" />
+        <option value="$PROJECT_DIR$/sorting2014/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/sortingUtilities/UtilityMethods.java" />
+        <option value="$PROJECT_DIR$/sorting2014/QuickSort.java" />
         <option value="$PROJECT_DIR$/sorting2014/SortDemo.java" />
       </list>
     </option>
@@ -145,6 +146,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,6 +175,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sortingUtilities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sorting2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sorting2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SortingData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sorting2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sorting2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sorting2014" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -180,7 +210,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,19 +299,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -308,6 +324,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -413,24 +442,24 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14275256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45054945" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.105417274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35478806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -456,36 +485,61 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3264">
-          <folding />
+        <state line="21" column="59" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="2941">
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3264">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3264">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3264">
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="174" column="33" selection-start="3733" selection-end="3733" vertical-scroll-proportion="0.0" vertical-offset="2958" max-vertical-offset="3264">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="2" selection-start="3990" selection-end="3990" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3264">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -506,7 +560,10 @@
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="10" selection-start="3963" selection-end="3963" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3366">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -527,7 +584,10 @@
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="184" column="10" selection-start="3963" selection-end="3963" vertical-scroll-proportion="0.0" vertical-offset="3128" max-vertical-offset="3366">
-          <folding />
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -541,20 +601,6 @@
     <entry file="file://$PROJECT_DIR$/linearStructures/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.9738134" vertical-offset="612" max-vertical-offset="2159" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sorting2014/RadixSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.19967267" vertical-offset="31" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sorting2014/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="268" selection-end="268" vertical-scroll-proportion="0.38952535" vertical-offset="0" max-vertical-offset="611">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SortingData/test3a.dat">
@@ -577,11 +623,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8500102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SortingData/test3.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="778" column="4" selection-start="6224" selection-end="6228" vertical-scroll-proportion="0.33221477" vertical-offset="13127" max-vertical-offset="17102" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="17" selection-start="368" selection-end="368" vertical-scroll-proportion="0.25040916" vertical-offset="0" max-vertical-offset="611">
@@ -596,41 +637,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sorting2014/BubbleSort.java">
+    <entry file="file://$PROJECT_DIR$/sorting2014/MakeDataFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="669" selection-end="712" vertical-scroll-proportion="0.55482817" vertical-offset="18" max-vertical-offset="629">
+        <state line="15" column="27" selection-start="396" selection-end="396" vertical-scroll-proportion="-0.108024694" vertical-offset="205" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sorting2014/MakeDataFile.java">
+    <entry file="file://$PROJECT_DIR$/sorting2014/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1303" selection-end="1303" vertical-scroll-proportion="1.0834697" vertical-offset="86" max-vertical-offset="1105">
+        <state line="26" column="16" selection-start="669" selection-end="712" vertical-scroll-proportion="0.41666666" vertical-offset="222" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting2014/RadixSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="-2.228395" vertical-offset="875" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortingUtilities/UtilityMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="52" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="295" max-vertical-offset="680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1462" selection-end="1524" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="2176">
+        <state line="23" column="44" selection-start="773" selection-end="773" vertical-scroll-proportion="-2.090909" vertical-offset="1196" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="18" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="902" max-vertical-offset="1513">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1876#1888#0" expanded="true" />
-          </folding>
+        <state line="22" column="3" selection-start="739" selection-end="760" vertical-scroll-proportion="-4.064935" vertical-offset="1939" max-vertical-offset="3621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting2014/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="22" selection-start="3452" selection-end="3452" vertical-scroll-proportion="0.0" vertical-offset="1344" max-vertical-offset="1955">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingData/test6b.dat">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingData/test6a.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34000102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingData/test3.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="778" column="4" selection-start="6224" selection-end="6228" vertical-scroll-proportion="0.0" vertical-offset="16717" max-vertical-offset="17102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingData/test6.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-47221.504" vertical-offset="16999742" max-vertical-offset="17000102">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sorting2014/SortDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="67" selection-start="3969" selection-end="3969" vertical-scroll-proportion="0.5826514" vertical-offset="2653" max-vertical-offset="3264">
-          <folding />
+        <state line="23" column="2" selection-start="691" selection-end="691" vertical-scroll-proportion="0.64675325" vertical-offset="142" max-vertical-offset="2924">
+          <folding>
+            <element signature="e#0#5195#0" expanded="true" />
+            <element signature="e#399#429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

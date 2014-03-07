@@ -19,9 +19,9 @@ public class SortDemo {
 
     public static void main(String[] args) {
         SortDemo sd = new SortDemo();
-        Comparable[] items = sd.readData("SortingData/test1.dat");
+        Comparable[] items = sd.readData("SortingData/test6.dat");
         System.out.println("Time: " + sd.testOne("sorting2014.QuickSort", items));
-        sd.printSortedArray(items);
+//        sd.printSortedArray(items);
 //		System.err.println(Runtime.getRuntime().maxMemory());
 //		System.out.println(sd.testAll("test6.dat"));
 //		System.out.println(sd.testEverything());
@@ -97,10 +97,9 @@ public class SortDemo {
         long timeTaken = 0;
         Sorter s = SortFactory.getSorter(type);
         if (s != null) {
-            start = System.currentTimeMillis() % 1000;
+            start = System.nanoTime();
             s.sort(items, 0);
-            finish = System.currentTimeMillis() % 1000;
-            timeTaken = finish - start;
+            timeTaken = System.nanoTime() - start;
         } else {
             System.out.println("Failed loading the sorter, no sorting will happen.");
         }

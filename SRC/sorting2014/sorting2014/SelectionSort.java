@@ -1,5 +1,7 @@
 package sorting2014;
 
+import sortingUtilities.UtilityMethods;
+
 /**
  * Selection Sort traverses through a list of
  * items, starting from one end of the list and working
@@ -19,7 +21,7 @@ package sorting2014;
  * @author - James Euesden <jee22@aber.ac.uk>
  * @version - 1.0
  */
-public class SelectionSort implements Sorter {
+public class SelectionSort implements Sorter{
     /**
      * The index number of the current smallest item.
      */
@@ -30,7 +32,6 @@ public class SelectionSort implements Sorter {
      * each element to find the smallest.
      */
     private int counter;
-    private Comparable[] items;
 
     /**
      * The initial function called to initiate the Sort function.
@@ -40,17 +41,15 @@ public class SelectionSort implements Sorter {
      */
     @Override
     public void sort(Comparable[] items, int cutoff) {
-        this.items = items;
-
         /**
          * Check that the list is not containing just one item.
          */
         if (items.length > 1) {
-            selectionSort();
+            selectionSort(items);
         }
     }
 
-    private void selectionSort() {
+    private void selectionSort(Comparable[] items) {
         /**
          * Assuming a normal array, the first element
          * (and so the first 'count'), should be 0.
@@ -96,7 +95,7 @@ public class SelectionSort implements Sorter {
              * of the sorted list.
              */
             if (smallestIndex != counter) {
-                swapElements(counter, smallestIndex);
+                UtilityMethods.swapElements(items, counter, smallestIndex);
             }
 
             /**
@@ -105,18 +104,5 @@ public class SelectionSort implements Sorter {
              */
             counter++;
         }
-    }
-
-    /**
-     * Take two element indexes and swap the elements at those
-     * indexes with each other.
-     *
-     * @param elementIndex_a - One element to swap
-     * @param elementIndex_b - The other element to swap
-     */
-    private void swapElements(int elementIndex_a, int elementIndex_b) {
-        Comparable temp = items[elementIndex_a];
-        items[elementIndex_a] = items[elementIndex_b];
-        items[elementIndex_b] = temp;
     }
 }
