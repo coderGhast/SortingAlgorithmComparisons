@@ -14,8 +14,6 @@ import java.io.*;
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 public class MakeDataFile {
-
-
 	public static void main(String[] args) {
 		if (args.length == 2) {
 			makeFile(args[0],Integer.parseInt(args[1]));

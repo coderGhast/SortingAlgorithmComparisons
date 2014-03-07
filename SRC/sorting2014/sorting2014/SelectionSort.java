@@ -1,8 +1,6 @@
 package sorting2014;
 
 /**
- * Created by jee22 on 04/03/14.
- *
  * Selection Sort traverses through a list of
  * items, starting from one end of the list and working
  * it's way to the other end, finding the smallest (or
@@ -10,15 +8,18 @@ package sorting2014;
  * this element is swapped places with the element at the front
  * (or back, if largest) of the array. This element is then
  * ignored for the rest of the sort.
- *
+ * <p/>
  * The result is a single array, where part is an ever-increasing
  * list of sorted items, and an ever-decreasing list of unsorted
  * items.
- *
+ * <p/>
  * Pseudo-code help from:
  * http://bit.ly/1lyrd9e
+ *
+ * @author - James Euesden <jee22@aber.ac.uk>
+ * @version - 1.0
  */
-public class SelectionSort implements Sorter{
+public class SelectionSort implements Sorter {
     /**
      * The index number of the current smallest item.
      */
@@ -31,6 +32,12 @@ public class SelectionSort implements Sorter{
     private int counter;
     private Comparable[] items;
 
+    /**
+     * The initial function called to initiate the Sort function.
+     *
+     * @param items  - Unsorted list of items to be sorted.
+     * @param cutoff - When to stop the sort.
+     */
     @Override
     public void sort(Comparable[] items, int cutoff) {
         this.items = items;
@@ -38,12 +45,12 @@ public class SelectionSort implements Sorter{
         /**
          * Check that the list is not containing just one item.
          */
-        if(items.length > 1){
+        if (items.length > 1) {
             selectionSort();
         }
     }
 
-    private void selectionSort(){
+    private void selectionSort() {
         /**
          * Assuming a normal array, the first element
          * (and so the first 'count'), should be 0.
@@ -55,7 +62,7 @@ public class SelectionSort implements Sorter{
          * - 1 as the array sensibly starts at 0, and so
          * ends (-1) than the full length of the array.
          */
-        while(counter < items.length -1){
+        while (counter < items.length - 1) {
 
             /**
              * The smallest item begins with
@@ -70,12 +77,12 @@ public class SelectionSort implements Sorter{
              * in the array. This also avoids comparing an element
              * against itself.
              */
-            for(int j = counter + 1; j < items.length; j++){
+            for (int j = counter + 1; j < items.length; j++) {
                 /**
                  * Check if an element is smaller than the current
                  * known smallest in the list. If yes, record it's index.
                  */
-                if(items[j].compareTo(items[smallestIndex]) < 0){
+                if (items[j].compareTo(items[smallestIndex]) < 0) {
                     smallestIndex = j;
                 }
             }
@@ -88,7 +95,7 @@ public class SelectionSort implements Sorter{
              * of the unsorted section as the current end element
              * of the sorted list.
              */
-            if(smallestIndex != counter){
+            if (smallestIndex != counter) {
                 swapElements(counter, smallestIndex);
             }
 
@@ -103,10 +110,11 @@ public class SelectionSort implements Sorter{
     /**
      * Take two element indexes and swap the elements at those
      * indexes with each other.
+     *
      * @param elementIndex_a - One element to swap
      * @param elementIndex_b - The other element to swap
      */
-    private void swapElements(int elementIndex_a, int elementIndex_b){
+    private void swapElements(int elementIndex_a, int elementIndex_b) {
         Comparable temp = items[elementIndex_a];
         items[elementIndex_a] = items[elementIndex_b];
         items[elementIndex_b] = temp;
