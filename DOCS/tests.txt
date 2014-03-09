@@ -1,0 +1,62 @@
+TEST RESULTS
+
+BubbleSort
+test1.dat, 11929
+test3.dat, 6954642
+test3a.dat, 28538557
+test3b.dat, 186265751
+test4.dat, 819756882
+- Stopped due to unreasonable waiting time -
+
+SelectionSort 
+test1.dat, 11834 
+test3.dat, 2962312 
+test3a.dat, 11624060 
+test3b.dat, 75309439 
+test4.dat, 328002960 
+test4a.dat, 1418615488
+- Stopped due to unreasonable waiting time -
+
+MergeSort 
+test1.dat, 16816 
+test3.dat, 193064 
+test3a.dat, 395953 
+test3b.dat, 1162390 
+test4.dat, 2522151 
+test4a.dat, 5630202 
+test4b.dat, 16642173 
+test5.dat, 39906916 
+test5a.dat, 93422975 
+test5b.dat, 290643854 
+test6.dat, 665837137 
+test6a.dat, 1523267786 
+test6b.dat, 4468304037
+
+QuickSort 
+test1.dat, 23494 
+test3.dat, 211289 
+test3a.dat, 406859 
+test3b.dat, 1179668 
+test4.dat, 2613708 
+test4a.dat, 6007934 
+test4b.dat, 17970252 
+test5.dat, 44194461 
+test5a.dat, 97429993 
+test5b.dat, 303178977 
+test6.dat, 700827472 
+test6a.dat, 1643509526 
+test6b.dat, 5177505199 
+
+RadixSort 
+test1.dat, 136679 
+test3.dat, 313148 
+test3a.dat, 563418 
+test3b.dat, 1568536 
+test4.dat, 2664475 
+test4a.dat, 5278586 
+test4b.dat, 21000163 
+test5.dat, 70350368 
+test5a.dat, 158382820 
+test5b.dat, 454032771 
+test6.dat, 2331406759 
+-Stopped due to crazy RAM usage-

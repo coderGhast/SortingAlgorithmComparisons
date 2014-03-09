@@ -23,8 +23,11 @@ import sortingUtilities.UtilityMethods;
  * side of pivots throughout the process, gradually
  * putting each element into the correct index.
  *
- * Based on adapted pseudo-code from:
+ * quickSort based on pseudo-code from:
  * http://bit.ly/1kCvXur
+ * partitioning based on pseudo-code from Richard Shipman's
+ * (rcs@aber.ac.uk) slides from lectures at
+ * Aberystwyth University.
  *
  * @author - James Euesden <jee22@aber.ac.uk>
  * @version - 1.0
@@ -67,8 +70,12 @@ public class QuickSort implements Sorter {
              * and greater than sides.
              */
             int pivot = partition(items, left, right);
-            quickSort(items, left, pivot -1);
-            quickSort(items, pivot +1, right);
+            if(pivot -1 > left){
+                quickSort(items, left, pivot-1);
+            }
+            if(pivot + 1 < right){
+                quickSort(items, pivot +1, right);
+            }
         }
     }
 
@@ -82,48 +89,67 @@ public class QuickSort implements Sorter {
      * section.
      *
      * @param items - The unsorted array.
-     * @param firstIndex - The left most index of the current section.
-     * @param lastIndex - The right most index of the current section.
-     * @return - The chosen pivot placement for partitioning the sides.
+     * @param first - The first index of the current section to be sorted.
+     * @param last - The last index of the current section to be sorted.
+     * @return - The current pivot position, where the partition between lists is.
      */
-    public int partition(Comparable[] items, int firstIndex, int lastIndex)
-    {
-        int i = firstIndex;
-        int j = lastIndex + 1;
-
-        Comparable pivot = items[firstIndex];
-
-        while (i < j) {
-            do{
-                i++;
-            } while (items[i].compareTo(pivot) < 0);
-            do{
-                j--;
-            } while (items[j].compareTo(pivot) > 0);
-            if(i < j) {
-                UtilityMethods.swapElements(items, i, j);
-            }
-        }
-        UtilityMethods.swapElements(items, firstIndex, j);
-        return j;
-    }
-
-    private int partitionTwo(Comparable[] items, int first, int last){
-        int pivot =1;
-        /*
-        pivotPos = middle of array a;
-        swap a[pivotPos] with a[first]; // Move the pivot out of the way
-        swapPos = first + 1;
-        for each element in the array from swapPos to last do:
-             // If the current element is smaller than pivot we
-             // move it towards start of array
-             if (a[currentElement] < a[first]):
-             swap a[swapPos] with a[currentElement];
-             increment swapPos by 1;
-        // Now move the pivot back to its rightful place
-        swap a[first] with a[swapPos-1];
-        return swapPos-1; // Pivot position
+    private int partition(Comparable[] items, int first, int last){
+        /**
+         * Get a random pivot for the current section.
          */
-        return pivot;
+        int pivot = (int) Math.floor(UtilityMethods.getPivot(first, last));
+
+        /**
+         * Swap the pivot item with the first element to move it out
+         * of the way during sorting. Assign a variable to hold this
+         * for quick comparison.
+         */
+        UtilityMethods.swapElements(items, pivot, first);
+        Comparable pivotElement = items[first];
+
+        /**
+         * The index to begin the swapping of the elements is the next
+         * index after the pivot, currently at first.
+         */
+        int swapPosition = first + 1;
+
+        /**
+         * For each element within the current section, we iterate through
+         * the section, starting from one after the pivot (the swap position)
+         */
+        for(int currentElement=swapPosition; currentElement <= last; currentElement++){
+
+            /**
+             * If the currently being checked element is smaller than the pivot,
+             * we swap the current element with the 'swap position'. This results
+             * in gathering all of the numbers less than the pivot element to
+             * one side of the array.
+             *
+             * The index that is then to be swapped is incremented. This means
+             * that any elements before the swap position will be sorted as 'less'
+             * than the pivot. We don't need to move any elements greater than
+             * the pivot.
+             */
+            if(items[currentElement].compareTo(pivotElement) < 0){
+                UtilityMethods.swapElements(items, swapPosition, currentElement);
+                swapPosition++;
+            }
+
+        }
+
+        /**
+         * After all elements have been swapped around, we switch the first element
+         * (the pivot element), with the last sorted 'less than' element in swap
+         * position -1. The works, as it doesn't matter what element is in what
+         * position, as long as there are greater and less than sections. By
+         * doing this swap, we keep the elements less than the pivot to the left
+         * of the pivot, and put the pivot in the 'correct' sorted place in the list.
+         */
+        UtilityMethods.swapElements(items, first ,swapPosition-1);
+
+        /**
+         * We return the swapPosition -1, which is the final index of the pivot element.
+         */
+        return swapPosition -1;
     }
 }
