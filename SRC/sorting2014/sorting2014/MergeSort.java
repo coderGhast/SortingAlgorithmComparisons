@@ -44,7 +44,7 @@ public class MergeSort implements Sorter {
          * Check that there are more than just 1 item
          * in the array.
          */
-        if(items.length > 1){
+        if (items.length > 1) {
             /**
              * Create a new temporary array that will hold
              * the elements while the items array is sorted,
@@ -69,15 +69,16 @@ public class MergeSort implements Sorter {
      * is signified when the 'left' is the same as 'right'
      * or higher, indicating that the section has only one
      * element (or no element) in it.
-     *
+     * <p/>
      * With each split section of the array, the function to
      * 'merge' the two is called. Since the mergeSort is called
      * recursively, this results in each of the smaller sections
      * of a single element being compared and 'merged' into
      * sorted order first.
+     *
      * @param items - The unsorted array.
-     * @param temp - An array temporarily holding the elements while they are sorted.
-     * @param left - the index considered left most of the current section.
+     * @param temp  - An array temporarily holding the elements while they are sorted.
+     * @param left  - the index considered left most of the current section.
      * @param right - the index considered the right most of the current section.
      */
     private static void mergeSort(Comparable[] items, Comparable[] temp, int left, int right) {
@@ -116,11 +117,12 @@ public class MergeSort implements Sorter {
      * Takes two sections of the array and merges them by sorting the elements
      * from the temporary array, holding the unsorted elements, and putting
      * them in-order in items.
-     * @param items - The unsorted array.
-     * @param temp - The holder for the elements while they are sorted in items.
+     *
+     * @param items      - The unsorted array.
+     * @param temp       - The holder for the elements while they are sorted in items.
      * @param firstIndex - The left-most element of the current section.
-     * @param centre - The centre element of the current section.
-     * @param lastIndex - The right-most element of the current section.
+     * @param centre     - The centre element of the current section.
+     * @param lastIndex  - The right-most element of the current section.
      */
     private static void merge(Comparable[] items, Comparable[] temp, int firstIndex, int centre, int lastIndex) {
 
@@ -190,7 +192,7 @@ public class MergeSort implements Sorter {
          * add those remaining elements to the sorted array. This is safe to do
          * as those remaining elements should be sorted in that section already.
          */
-        while(currentLeftIndex <= centre){
+        while (currentLeftIndex <= centre) {
             items[i] = temp[currentLeftIndex];
             currentLeftIndex++;
             i++;
@@ -199,7 +201,7 @@ public class MergeSort implements Sorter {
          * Same as for if the right section still has elements while the left
          * does not.
          */
-        while(currentRightIndex <= lastIndex) {
+        while (currentRightIndex <= lastIndex) {
             items[i] = temp[currentRightIndex];
             currentRightIndex++;
             i++;

@@ -11,18 +11,18 @@ import sortingUtilities.UtilityMethods;
  * elements to different sides of the list,
  * based on whether they are greater than or
  * less than the pivot.
- *
+ * <p/>
  * Those less than and greater than sections
  * are then themselves put through the
  * same QuickSort partitioning process.
- *
+ * <p/>
  * This is repeated until there are partitions
  * the size of a single element. When this is
  * the result, the list is sorted, as each element
  * has been put either to the greater or less than
  * side of pivots throughout the process, gradually
  * putting each element into the correct index.
- *
+ * <p/>
  * quickSort based on pseudo-code from:
  * http://bit.ly/1kCvXur
  * partitioning based on pseudo-code from Richard Shipman's
@@ -36,7 +36,8 @@ public class QuickSort implements Sorter {
 
     /**
      * Calls to quickSort to begin the sorting algorithm.
-     * @param items - The unsorted list.
+     *
+     * @param items  - The unsorted list.
      * @param cutoff - When the sort should stop.
      */
     @Override
@@ -52,29 +53,30 @@ public class QuickSort implements Sorter {
      * then partitions the left and the right side of the
      * list, and returns the 'pivot', separating the less
      * than and greater than sides of the list.
-     *
+     * <p/>
      * This pivot is then used with the right most and left
      * most indexes in the current partition to conduct
      * another quickSort on those individual partitions,
      * gradually sorting the list through dividing and
      * conquering.
+     *
      * @param items - The unsorted array.
-     * @param left - The left most index of the section.
+     * @param left  - The left most index of the section.
      * @param right - The right most index of the section.
      */
     private void quickSort(Comparable[] items, int left, int right) {
-        if(left < right){
+        if (left < right) {
             /**
              * Split the list at the pivot through partitioning it,
              * and return the pivot to separate out the less than
              * and greater than sides.
              */
             int pivot = partition(items, left, right);
-            if(pivot -1 > left){
-                quickSort(items, left, pivot-1);
+            if (pivot - 1 > left) {
+                quickSort(items, left, pivot - 1);
             }
-            if(pivot + 1 < right){
-                quickSort(items, pivot +1, right);
+            if (pivot + 1 < right) {
+                quickSort(items, pivot + 1, right);
             }
         }
     }
@@ -90,12 +92,21 @@ public class QuickSort implements Sorter {
      *
      * @param items - The unsorted array.
      * @param first - The first index of the current section to be sorted.
-     * @param last - The last index of the current section to be sorted.
+     * @param last  - The last index of the current section to be sorted.
      * @return - The current pivot position, where the partition between lists is.
      */
-    private int partition(Comparable[] items, int first, int last){
+    private int partition(Comparable[] items, int first, int last) {
         /**
          * Get a random pivot for the current section.
+         * <p/>
+         * It should be noted that I made a decision to choose a randomized pivot
+         * over selecting a hard-coded pivot (i.e. the middle), or a median. This
+         * is to avoid situations where we might get the 'worst case' scenario for
+         * QuickSort, leading to O(n^2) time complexity. By using a random pivot,
+         * it becomes highly unlikely for the algorithm to run into this situation.
+         * <p/>
+         * I felt this was the safest and most reliable way of implementing the
+         * pivot selection.
          */
         int pivot = (int) Math.floor(UtilityMethods.getPivot(first, last));
 
@@ -117,7 +128,7 @@ public class QuickSort implements Sorter {
          * For each element within the current section, we iterate through
          * the section, starting from one after the pivot (the swap position)
          */
-        for(int currentElement=swapPosition; currentElement <= last; currentElement++){
+        for (int currentElement = swapPosition; currentElement <= last; currentElement++) {
 
             /**
              * If the currently being checked element is smaller than the pivot,
@@ -130,7 +141,7 @@ public class QuickSort implements Sorter {
              * than the pivot. We don't need to move any elements greater than
              * the pivot.
              */
-            if(items[currentElement].compareTo(pivotElement) < 0){
+            if (items[currentElement].compareTo(pivotElement) < 0) {
                 UtilityMethods.swapElements(items, swapPosition, currentElement);
                 swapPosition++;
             }
@@ -145,11 +156,11 @@ public class QuickSort implements Sorter {
          * doing this swap, we keep the elements less than the pivot to the left
          * of the pivot, and put the pivot in the 'correct' sorted place in the list.
          */
-        UtilityMethods.swapElements(items, first ,swapPosition-1);
+        UtilityMethods.swapElements(items, first, swapPosition - 1);
 
         /**
          * We return the swapPosition -1, which is the final index of the pivot element.
          */
-        return swapPosition -1;
+        return swapPosition - 1;
     }
 }

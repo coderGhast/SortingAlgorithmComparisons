@@ -1,15 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sorting_algorithms.aux
 The style file: abbrv.bst
-I couldn't open database file sigproc.bib
----line 23 of file sorting_algorithms.aux
- : \bibdata{sigproc
- :                 }
+I couldn't open database file sorting_algorithms.bib
+---line 16 of file sorting_algorithms.aux
+ : \bibdata{sorting_algorithms
+ :                            }
 I'm skipping whatever remains of this command
 I found no database files---while reading file sorting_algorithms.aux
-Warning--I didn't find a database entry for "Lamport:LaTeX"
-Warning--I didn't find a database entry for "bowman:reasoning"
-Warning--I didn't find a database entry for "clark:pct"
-Warning--I didn't find a database entry for "braams:babel"
-Warning--I didn't find a database entry for "herlihy:methodology"
-Warning--I didn't find a database entry for "salas:calculus"
+Warning--I didn't find a database entry for "assignment"
 (There were 2 error messages)

@@ -21,7 +21,7 @@ import sortingUtilities.UtilityMethods;
  * @author - James Euesden <jee22@aber.ac.uk>
  * @version - 1.0
  */
-public class SelectionSort implements Sorter{
+public class SelectionSort implements Sorter {
     /**
      * The index number of the current smallest item.
      */

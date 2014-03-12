@@ -6,22 +6,70 @@ test3.dat, 6954642
 test3a.dat, 28538557
 test3b.dat, 186265751
 test4.dat, 819756882
+test4a.dat, 3697893734
+test4b.dat, 28489873272
 - Stopped due to unreasonable waiting time -
 
 SelectionSort 
-test1.dat, 11834 
-test3.dat, 2962312 
-test3a.dat, 11624060 
+test1.dat, 13073 
+test1a.dat, 8664 
+test1b.dat, 13176 
+test2.dat, 33244 
+test2a.dat, 138119 
+test2b.dat, 818720 
+test3.dat, 3161142 
+test3a.dat, 11854583 
 test3b.dat, 75309439 
 test4.dat, 328002960 
 test4a.dat, 1418615488
+test4b.dat, 12060082066
 - Stopped due to unreasonable waiting time -
 
+InsertionSort 
+test1.dat, 7606 
+test1a.dat, 12311 
+test1b.dat, 5135 
+test2.dat, 14246 
+test2a.dat, 37511 
+test2b.dat, 272361 
+test3.dat, 959468 
+test3a.dat, 4121500 
+test3b.dat, 26664570 
+test4.dat, 126899017 
+test4a.dat, 575485706 
+test4b.dat, 5254582966 
+- Stopped due to unreasonable waiting time -
+
+ShellSort 
+test1.dat, 8111 
+test1a.dat, 12690 
+test1b.dat, 4796 
+test2.dat, 7077 
+test2a.dat, 21280 
+test2b.dat, 118429 
+test3.dat, 232347 
+test3a.dat, 558958 
+test3b.dat, 1729134 
+test4.dat, 3990999 
+test4a.dat, 9357743 
+test4b.dat, 34923499 
+test5.dat, 104732371 
+test5a.dat, 258337628 
+test5b.dat, 796996293 
+test6.dat, 1816485003 
+test6a.dat, 4178306510 
+test6b.dat, 12599892259
+
 MergeSort 
-test1.dat, 16816 
-test3.dat, 193064 
-test3a.dat, 395953 
-test3b.dat, 1162390 
+test1.dat, 17084 
+test1a.dat, 24943 
+test1b.dat, 45627 
+test2.dat, 14111 
+test2a.dat, 26463 
+test2b.dat, 132431 
+test3.dat, 196513 
+test3a.dat, 461442 
+test3b.dat, 1278209 
 test4.dat, 2522151 
 test4a.dat, 5630202 
 test4b.dat, 16642173 
@@ -33,10 +81,15 @@ test6a.dat, 1523267786
 test6b.dat, 4468304037
 
 QuickSort 
-test1.dat, 23494 
-test3.dat, 211289 
-test3a.dat, 406859 
-test3b.dat, 1179668 
+test1.dat, 25373 
+test1a.dat, 41569 
+test1b.dat, 52429 
+test2.dat, 29009 
+test2a.dat, 28752 
+test2b.dat, 103453 
+test3.dat, 197180 
+test3a.dat, 461931 
+test3b.dat, 1310328
 test4.dat, 2613708 
 test4a.dat, 6007934 
 test4b.dat, 17970252 
@@ -48,10 +101,15 @@ test6a.dat, 1643509526
 test6b.dat, 5177505199 
 
 RadixSort 
-test1.dat, 136679 
-test3.dat, 313148 
-test3a.dat, 563418 
-test3b.dat, 1568536 
+test1.dat, 115863 
+test1a.dat, 43089 
+test1b.dat, 23692 
+test2.dat, 41119 
+test2a.dat, 67472 
+test2b.dat, 182093 
+test3.dat, 323236 
+test3a.dat, 630730 
+test3b.dat, 1833101
 test4.dat, 2664475 
 test4a.dat, 5278586 
 test4b.dat, 21000163 

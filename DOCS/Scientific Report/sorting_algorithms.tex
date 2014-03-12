@@ -30,13 +30,9 @@
 
 \begin{document}
 
-\title{A Sample {\ttlit ACM} SIG Proceedings Paper in LaTeX
-Format\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
-\subtitle{[Extended Abstract]
-\titlenote{A full version of this paper is available as
-\textit{Author's Guide to Preparing ACM SIG Proceedings Using
-\LaTeX$2_\epsilon$\ and BibTeX} at
-\texttt{www.acm.org/eaddress.htm}}}
+\title{CS21120: Data Structures and Algorithm Analysis - \\
+Sorting}
+\subtitle{[Extended Abstract]}
 %
 % You need the command \numberofauthors to handle the 'placement
 % and alignment' of the authors beneath the title.
@@ -62,7 +58,7 @@ Format\titlenote{(Does NOT produce the permission block, copyright information n
 % without further effort on your part as the last section in
 % the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{8} %  in this sample file, there are a *total*
+\numberofauthors{1} %  in this sample file, there are a *total*
 % of EIGHT authors. SIX appear on the 'first-page' (for formatting
 % reasons) and the remaining two appear in the \additionalauthors section.
 %
@@ -79,409 +75,365 @@ Format\titlenote{(Does NOT produce the permission block, copyright information n
 %
 % 1st. author
 \alignauthor
-Ben Trovato\titlenote{Dr.~Trovato insisted his name be first.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{1932 Wallamaloo Lane}\\
-       \affaddr{Wallamaloo, New Zealand}\\
-       \email{trovato@corporation.com}
-% 2nd. author
-\alignauthor
-G.K.M. Tobin\titlenote{The secretary disavows
-any knowledge of this author's actions.}\\
-       \affaddr{Institute for Clarity in Documentation}\\
-       \affaddr{P.O. Box 1212}\\
-       \affaddr{Dublin, Ohio 43017-6221}\\
-       \email{webmaster@marysville-ohio.com}
-% 3rd. author
-\alignauthor Lars Th{\o}rv{\"a}ld\titlenote{This author is the
-one who did all the really hard work.}\\
-       \affaddr{The Th{\o}rv{\"a}ld Group}\\
-       \affaddr{1 Th{\o}rv{\"a}ld Circle}\\
-       \affaddr{Hekla, Iceland}\\
-       \email{larst@affiliation.org}
-\and  % use '\and' if you need 'another row' of author names
-% 4th. author
-\alignauthor Lawrence P. Leipuner\\
-       \affaddr{Brookhaven Laboratories}\\
-       \affaddr{Brookhaven National Lab}\\
-       \affaddr{P.O. Box 5000}\\
-       \email{lleipuner@researchlabs.org}
-% 5th. author
-\alignauthor Sean Fogarty\\
-       \affaddr{NASA Ames Research Center}\\
-       \affaddr{Moffett Field}\\
-       \affaddr{California 94035}\\
-       \email{fogartys@amesres.org}
-% 6th. author
-\alignauthor Charles Palmer\\
-       \affaddr{Palmer Research Laboratories}\\
-       \affaddr{8600 Datapoint Drive}\\
-       \affaddr{San Antonio, Texas 78229}\\
-       \email{cpalmer@prl.com}
+James Euesden\\
+       \affaddr{Computer Science Department}\\
+       \affaddr{Aberystwyth University}\\
+       \affaddr{Llandinum Bldg, Penglais}\\
+       \affaddr{ Aberystwyth, Dyfed}\\
+       \affaddr{SY23 3DB}
+       \email{jee22@aber.ac.uk}
 }
-% There's nothing stopping you putting the seventh, eighth, etc.
-% author on the opening page (as the 'third row') but we ask,
-% for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
-\additionalauthors{Additional authors: John Smith (The Th{\o}rv{\"a}ld Group,
-email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
-(The Kumquat Consortium, email: {\texttt{jpkumquat@consortium.net}}).}
-\date{30 July 1999}
-% Just remember to make sure that the TOTAL number of authors
-% is the number that will appear on the first page PLUS the
-% number that will appear in the \additionalauthors section.
 
 \maketitle
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms to
-the formatting guidelines for ACM SIG Proceedings.
-It complements the document \textit{Author's Guide to Preparing
-ACM SIG Proceedings Using \LaTeX$2_\epsilon$\ and Bib\TeX}. This
-source file has been written with the intention of being
-compiled under \LaTeX$2_\epsilon$\ and BibTeX.
+%%%%%% TO DO!!!!!!!!!
+This paper concerns the runtime comparissons of
+7 sorting algorithms, that are tried and tested
+throughout computer science and software engineering.
+The algorithms in question are Bubble, Selection, Insertion,
+Shell, Radix, Merge and Quick sort. These are
+written and tested in Java.
 
-The developers have tried to include every imaginable sort
-of ``bells and whistles", such as a subtitle, footnotes on
-title, subtitle and authors, as well as in the text, and
-every optional component (e.g. Acknowledgments, Additional
-Authors, Appendices), not to mention examples of
-equations, theorems, tables and figures.
+Each algorithm
+will be tested under similar running conditions on 18 data
+sets, each with a different number of items. The results
+of these tests will be analysed to see anything of
+note when these algorithms are compared. In particular,
+any cross-over points of algorithm runtimes, the fastest
+algorithms for different data set sizes and whether the
+size of a data set really makes a difference on an algorithms
+runtime.
 
-To make best use of this sample document, run it through \LaTeX\
-and BibTeX, and compare this source code with the printed
-output produced by the dvi file.
+This report also attempts
+at selecting a 'best average case sorting algorithm'.
 \end{abstract}
 
 % A category with the (minimum) three required fields
-\category{H.4}{Information Systems Applications}{Miscellaneous}
-%A category including the fourth, optional field follows...
-\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
+\category{F.2}{ANALYSIS OF ALGORITHMS AND PROBLEM COMPLEXITY}{Nonnumerical Algorithms and Problems}[Sorting and searching]
 
-\terms{Theory}
+\terms{Algorithms, Performance}
 
-\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
+\keywords{Sorting, Big O} % NOT required for Proceedings
 
 \section{Introduction}
-The \textit{proceedings} are the records of a conference.
-ACM seeks to give these conference by-products a uniform,
-high-quality appearance.  To do this, ACM has some rigid
-requirements for the format of the proceedings documents: there
-is a specified format (balanced  double columns), a specified
-set of fonts (Arial or Helvetica and Times Roman) in
-certain specified sizes (for instance, 9 point for body copy),
-a specified live area (18 $\times$ 23.5 cm [7" $\times$ 9.25"]) centered on
-the page, specified size of margins (1.9 cm [0.75"]) top, (2.54 cm [1"]) bottom
-and (1.9 cm [.75"]) left and right; specified column width
-(8.45 cm [3.33"]) and gutter size (.83 cm [.33"]).
+The task set\cite{assignment} was to analyse a minimum of three sorting algorithms,
+written in Java, and use each on a number of test samples of data.
+These samples of data range from small data sets to very large data
+sets, with an initial 13 tests supplied and later extended to 18 tests. 
+On each run, the elapsed time from the start of the algorithm to
+the completion completion time would be record and compared against
+other algorithms in order to reach conclusions.
 
-The good news is, with only a handful of manual
-settings\footnote{Two of these, the {\texttt{\char'134 numberofauthors}}
-and {\texttt{\char'134 alignauthor}} commands, you have
-already used; another, {\texttt{\char'134 balancecolumns}}, will
-be used in your very last run of \LaTeX\ to ensure
-balanced column heights on the last page.}, the \LaTeX\ document
-class file handles all of this for you.
+From the results of the testing, we can compare and contrast each
+of the algorithms to determine which are the best for particular
+circumstances of varying data set sizes. We will also attempt to 
+determine which are the best case average, and examine any particularly 
+interesting results and cross-over points between the algorithms 
+where one becomes better than another with the different sizes of 
+data sets.
 
-The remainder of this document is concerned with showing, in
-the context of an ``actual'' document, the \LaTeX\ commands
-specifically available for denoting the structure of a
-proceedings paper, rather than with giving rigorous descriptions
-or explanations of such commands.
+The sorting algorithms under test were Bubble Sort, Insertion Sort,
+Selection Sort, Shell Sort, Radix Sort, Merge Sort and Quick Sort. For this
+report, it is assumed that the reader has a basic knowledge of how these
+algorithms work, and a comprehension of their time complexity\cite{complexity}, expressed
+in Big O\cite{bigo} notation.
 
+Nowhere in this report will discuss the specifics of what
+an algorithm does, or how to write it in code. There are online
+resources in the dozens to develop these algorithms, and this report
+deals only with their performance in their runtimes and the effect of
+different sizes of data sets on each algorithm.
+
+
+%%%%%%%
 \section{The {\secit Body} of The Paper}
-Typically, the body of a paper is organized
-into a hierarchical structure, with numbered or unnumbered
-headings for sections, subsections, sub-subsections, and even
-smaller sections.  The command \texttt{{\char'134}section} that
-precedes this paragraph is part of such a
-hierarchy.\footnote{This is the second footnote.  It
-starts a series of three footnotes that add nothing
-informational, but just give an idea of how footnotes work
-and look. It is a wordy one, just so you see
-how a longish one plays out.} \LaTeX\ handles the numbering
-and placement of these headings for you, when you use
-the appropriate heading commands around the titles
-of the headings.  If you want a sub-subsection or
-smaller part to be unnumbered in your output, simply append an
-asterisk to the command name.  Examples of both
-numbered and unnumbered headings will appear throughout the
-balance of this sample document.
 
-Because the entire article is contained in
-the \textbf{document} environment, you can indicate the
-start of a new paragraph with a blank line in your
-input file; that is why this sentence forms a separate paragraph.
+\subsection{Materials \& Environment}
+In order to get the most accurate and valid results to compare algorithms,
+it was necessary to have similar testing conditions for each individual test run.
+The environment for all tests was on a Fujitsu Lifebook AH532 Notebook,
+running Windows version 8.1 with a 2.6GHz processor and were allowed 
+to use up to 3GBs of RAM for each individual test.
 
-\subsection{Type Changes and {\subsecit Special} Characters}
-We have already seen several typeface changes in this sample.  You
-can indicate italicized words or phrases in your text with
-the command \texttt{{\char'134}textit}; emboldening with the
-command \texttt{{\char'134}textbf}
-and typewriter-style (for instance, for computer code) with
-\texttt{{\char'134}texttt}.  But remember, you do not
-have to indicate typestyle changes when such changes are
-part of the \textit{structural} elements of your
-article; for instance, the heading of this subsection will
-be in a sans serif\footnote{A third footnote, here.
-Let's make this a rather short one to
-see how it looks.} typeface, but that is handled by the
-document class file. Take care with the use
-of\footnote{A fourth, and last, footnote.}
-the curly braces in typeface changes; they mark
-the beginning and end of
-the text that is to be in the different typeface.
+All algorithms and the 
+testing suite were written in Java, SDK 1.7.0\_51, using 
+theIntelliJ IDE for both writing and conducting the tests. All tests were
+run under similar conditions, where the device in use was only used for
+running the tests and nothing else in order to best
+represent each algorithms performance.
 
-You can use whatever symbols, accented characters, or
-non-English characters you need anywhere in your document;
-you can find a complete list of what is
-available in the \textit{\LaTeX\
-User's Guide}\cite{Lamport:LaTeX}.
 
-\subsection{Math Equations}
-You may want to display math equations in three distinct styles:
-inline, numbered or non-numbered display.  Each of
-the three are discussed in the next sections.
+%%%%
+\subsection{Methods}
+To test the sorting algorithms, a testing suite class was written to conduct
+single and multiple tests on single and multiple algorithms. Using this class, 
+the algorithms were tested multiple times on a total of 18 different data sets,
+each with a differing number of items in the set. By testing with many different
+varying sizes of data sets, it was possible to see what the effect of the size
+of a data set has on the different algorithms, and if some out performed
+others on one size, but were outperformed on other sizes, larger or smaller.
 
-\subsubsection{Inline (In-text) Equations}
-A formula that appears in the running text is called an
-inline or in-text formula.  It is produced by the
-\textbf{math} environment, which can be
-invoked with the usual \texttt{{\char'134}begin. . .{\char'134}end}
-construction or with the short form \texttt{\$. . .\$}. You
-can use any of the symbols and structures,
-from $\alpha$ to $\omega$, available in
-\LaTeX\cite{Lamport:LaTeX}; this section will simply show a
-few examples of in-text equations in context. Notice how
-this equation: \begin{math}\lim_{n\rightarrow \infty}x=0\end{math},
-set here in in-line math style, looks slightly different when
-set in display style.  (See next section).
+These data set sizes ranged from 10 items to 5,000,000 items, and each number contained no more than 6 digits. Some data sets had repeating data, while others did not. These are shown in a table below.
 
-\subsubsection{Display Equations}
-A numbered display equation -- one set off by vertical space
-from the text and centered horizontally -- is produced
-by the \textbf{equation} environment. An unnumbered display
-equation is produced by the \textbf{displaymath} environment.
-
-Again, in either environment, you can use any of the symbols
-and structures available in \LaTeX; this section will just
-give a couple of examples of display equations in context.
-First, consider the equation, shown as an inline equation above:
-\begin{equation}\lim_{n\rightarrow \infty}x=0\end{equation}
-Notice how it is formatted somewhat differently in
-the \textbf{displaymath}
-environment.  Now, we'll enter an unnumbered equation:
-\begin{displaymath}\sum_{i=0}^{\infty} x + 1\end{displaymath}
-and follow it with another numbered equation:
-\begin{equation}\sum_{i=0}^{\infty}x_i=\int_{0}^{\pi+2} f\end{equation}
-just to demonstrate \LaTeX's able handling of numbering.
-
-\subsection{Citations}
-Citations to articles \cite{bowman:reasoning, clark:pct, braams:babel, herlihy:methodology},
-conference
-proceedings \cite{clark:pct} or books \cite{salas:calculus, Lamport:LaTeX} listed
-in the Bibliography section of your
-article will occur throughout the text of your article.
-You should use BibTeX to automatically produce this bibliography;
-you simply need to insert one of several citation commands with
-a key of the item cited in the proper location in
-the \texttt{.tex} file \cite{Lamport:LaTeX}.
-The key is a short reference you invent to uniquely
-identify each work; in this sample document, the key is
-the first author's surname and a
-word from the title.  This identifying key is included
-with each item in the \texttt{.bib} file for your article.
-
-The details of the construction of the \texttt{.bib} file
-are beyond the scope of this sample document, but more
-information can be found in the \textit{Author's Guide},
-and exhaustive details in the \textit{\LaTeX\ User's
-Guide}\cite{Lamport:LaTeX}.
-
-This article shows only the plainest form
-of the citation command, using \texttt{{\char'134}cite}.
-This is what is stipulated in the SIGS style specifications.
-No other citation format is endorsed.
-
-\subsection{Tables}
-Because tables cannot be split across pages, the best
-placement for them is typically the top of the page
-nearest their initial cite.  To
-ensure this proper ``floating'' placement of tables, use the
-environment \textbf{table} to enclose the table's contents and
-the table caption.  The contents of the table itself must go
-in the \textbf{tabular} environment, to
-be aligned properly in rows and columns, with the desired
-horizontal and vertical rules.  Again, detailed instructions
-on \textbf{tabular} material
-is found in the \textit{\LaTeX\ User's Guide}.
-
-Immediately following this sentence is the point at which
-Table 1 is included in the input file; compare the
-placement of the table here with the table in the printed
-dvi output of this document.
-
-\begin{table}
+\begin{table}[h]
 \centering
-\caption{Frequency of Special Characters}
+\caption{Test files and their data set sizes}
 \begin{tabular}{|c|c|l|} \hline
-Non-English or Math&Frequency&Comments\\ \hline
-\O & 1 in 1,000& For Swedish names\\ \hline
-$\pi$ & 1 in 5& Common in math\\ \hline
-\$ & 4 in 5 & Used in business\\ \hline
-$\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
+Test Name&Number of items\\ \hline
+test1 & 10\\ \hline
+test1a & 20\\ \hline
+test1b & 50\\ \hline
+test2 & 100\\ \hline
+test2a & 200\\ \hline
+test2b & 500\\ \hline
+test3 & 1,000\\ \hline
+test3a & 2,000\\ \hline
+test3b & 5,000\\ \hline
+test4 & 10,000\\ \hline
+test4a & 20,000\\ \hline
+test4b & 50,000\\ \hline
+test5 & 100,000\\ \hline
+test5a & 200,000\\ \hline
+test5b & 500,000\\ \hline
+test6 & 1,000,000\\ \hline
+test6a & 2,000,000\\ \hline
+test6b & 5,000,000\\ 
 \hline\end{tabular}
 \end{table}
 
-To set a wider table, which takes up the whole width of
-the page's live area, use the environment
-\textbf{table*} to enclose the table's contents and
-the table caption.  As with a single-column table, this wide
-table will ``float" to a location deemed more desirable.
-Immediately following this sentence is the point at which
-Table 2 is included in the input file; again, it is
-instructive to compare the placement of the
-table here with the table in the printed dvi
-output of this document.
+To get as accurate of a result as possible, each tests runtime was recorded
+using nanoseconds, with the Java command \begin{math} System.nanotime() \end{math}.
+This was saved to a variable just before the call to begin the sort, and the nanotime was taken again after the completion of the algorithm. This result was then deducted from the start time to result in the elapsed time.
+This time was then converted into milliseconds for representation in the spreadsheet of results.
 
+When testing each algorithm on a given data set, the runtime could sometimes be
+skewed by the 'warm up' of the processor as it adjusted to the algorithm, or a
+result might be abnormal if a sorting process was slowed down due to another process
+attempting to use the CPU at the same time. To combat these issues, the
+tests were set to run a minimum of 10 times before any elapsed times were recorded,
+and treated as  a 'warm up' run for the algorithm,
 
-\begin{table*}
+Once an algorithm had been 'warmed' up on the system, the actual test itereations were run and the elapsed time between
+each run was recorded and added to a 'total' time of all runs set for testing. For
+the purpose of this task, each algorithm was run on each set of data a total of 100
+times. The total time was then divided by the amount of times the test
+was run in order to form an average run time. This average run time for each test
+is what was considered as the result for each sorting algorithm on each test.
+
+For a number of tests, it was necessary to cancel the sorting part way through, 
+or to abort a test entirely. This was based on some tests taking more time than was
+reasonable to conclude. These will be discussed in more detail within the
+results section.
+
+\subsection{Results}
+As each test concluded, the results were stored in a spreadsheet to later
+be displayed as line graph for analysis.
+Below is a screencap of these results upon completion, where the numbers
+shown in the cells are the average runtimes of the algorithm on a particular
+amount of items in a data set, displayed in Milliseconds. Those cells where 'DNF' is present 
+represent where a test 'Did Not Finish'.
+
+\begin{figure}[h]
 \centering
-\caption{Some Typical Commands}
-\begin{tabular}{|c|c|l|} \hline
-Command&A Number&Comments\\ \hline
-\texttt{{\char'134}alignauthor} & 100& Author alignment\\ \hline
-\texttt{{\char'134}numberofauthors}& 200& Author enumeration\\ \hline
-\texttt{{\char'134}table}& 300 & For tables\\ \hline
-\texttt{{\char'134}table*}& 400& For wider tables\\ \hline\end{tabular}
-\end{table*}
-% end the environment with {table*}, NOTE not {table}!
+\includegraphics[width=0.48\textwidth]{img/results_table.png}
+\caption{The full tests results table}
+\end{figure}
 
-\subsection{Figures}
-Like tables, figures cannot be split across pages; the
-best placement for them
-is typically the top or the bottom of the page nearest
-their initial cite.  To ensure this proper ``floating'' placement
-of figures, use the environment
-\textbf{figure} to enclose the figure and its caption.
+As is visible from the results, the simple sorts, Bubble, Insertion and Select,
+did not finish or were aborted for the larger test sizes. This was due to the amount of time it began to
+take for each sorting algorithm to run the tests. The time it would take became
+unreasonable and so it seemed best to abort those tests. Even with not running
+these tests, it is apparent from the resulting graph the way in which these  \begin{math}O(n^2)\end{math} time complextity\cite{timec} algorithms
+would continue to run and how their results look.
 
-This sample document contains examples of \textbf{.eps}
-and \textbf{.ps} files to be displayable with \LaTeX.  More
-details on each of these is found in the \textit{Author's Guide}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\textwidth]{img/graph_all_tests.png}
+\caption{The test results expressed as a line graph}
+\end{figure}
 
+This line graph represents the full results contained in the spreadsheet, and stands
+as a way of comparing each sorting algorithm against the others. What 
+immediately stands out here, is how the simpler algorithms (Bubble, Select, Insertion) begin to take much 
+longer than those of \begin{math}O(n log(n))\end{math} and \begin{math}O(nk)\end{math}
+ at around the 10,000 items in a data set mark due to their exponential growth rate.
 
+\subsection{Discussion}
+To break down the results and intelligently discuss them, the results have been dissected
+into more appropriate forms of viewing. To begin, the smaller data (10 - 200) sets were looked at and
+analysed to see which sort(s) is the most appropriate for smaller data sets.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\textwidth]{img/graph_smaller.png}
+\caption{Smaller data sets and their results}
+\end{figure}
 
-As was the case with tables, you may want a figure
-that spans two columns.  To do this, and still to
-ensure proper ``floating'' placement of tables, use the environment
-\textbf{figure*} to enclose the figure and its caption.
+What is most apparent, is that those \begin{math}O(n^2)\end{math} sorting algorithms
+that struggle with the larger sets actually out perform the more complicated algorithms
+for the data sets below 100-200 items.
 
-Note that either {\textbf{.ps}} or {\textbf{.eps}} formats are
-used; use
-the \texttt{{\char'134}epsfig} or \texttt{{\char'134}psfig}
-commands as appropriate for the different file types.
+Notably, Insertion and Shell sort share very similar time complextities for these smaller 
+data sets. As can be seen at the 200 items point though, Shell sort continues
+to perform with a lower runtime, while Insertion sort's time begins to break away and 
+the algorithm takes longer to iterate through the list. This could be expected, as Shell
+sort is based upon Insertion sort, and could be considered as an improvement on Insertion.
 
-\subsection{Theorem-like Constructs}
-Other common constructs that may occur in your article are
-the forms for logical constructs like theorems, axioms,
-corollaries and proofs.  There are
-two forms, one produced by the
-command \texttt{{\char'134}newtheorem} and the
-other by the command \texttt{{\char'134}newdef}; perhaps
-the clearest and easiest way to distinguish them is
-to compare the two in the output of this sample document:
+At the 200 data set test, it can also be seen that Quick Sort crosses over with the simpler
+sorts, beginning to perform at a similar rate as them. With any data sets less than this size,
+Quick Sort does not work efficiently compared to the other algorithms. It is in fact one of the 
+slowest sorting algorithms for smaller data sets, with Radix sort being the absolute worst 
+algorithm until a size of 50 or more items.
 
-This uses the \textbf{theorem} environment, created by
-the\linebreak\texttt{{\char'134}newtheorem} command:
-\newtheorem{theorem}{Theorem}
-\begin{theorem}
-Let $f$ be continuous on $[a,b]$.  If $G$ is
-an antiderivative for $f$ on $[a,b]$, then
-\begin{displaymath}\int^b_af(t)dt = G(b) - G(a).\end{displaymath}
-\end{theorem}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.48\textwidth]{img/graph_middle.png}
+\caption{The data sets from the middle of this reports testing data}
+\end{figure}
 
-The other uses the \textbf{definition} environment, created
-by the \texttt{{\char'134}newdef} command:
-\newdef{definition}{Definition}
-\begin{definition}
-If $z$ is irrational, then by $e^z$ we mean the
-unique number which has
-logarithm $z$: \begin{displaymath}{\log e^z = z}\end{displaymath}
-\end{definition}
+Another interesting thing to note is how Bubble sort's expoential growth is very visible by
+the point there are 100 items of data to process. It is at this stage that the more reliable
+algorithms cross over with Bubble sort, and shows why Bubble sort is fine for small data
+sets, but terrible when presented with anything moderately large. The same can be said about
+Select sort, which also becomes exponentially slower than Bubble sort at 100 items, just
+at a lowler rate. This is backed up by when you look at the middle set of data sets tested
+for this report.
 
+While the other algorithms continue working at a relatively similar pace, Bubble, Select
+and Insertion sort grow exponentially. This leads them up to the tests they did not process, when they were
+no longer able to run within a reasonable time frame for the testing. Regardless, it is
+relatively easy to predict their expected outcomes for future tests based upon the 
+results of the tests that were conducted on these algorithms.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.48\textwidth]{img/graph_larger.png}
+\caption{The larger data sets and test results for applicable algorithms}
+\end{figure}
 
-Two lists of constructs that use one of these
-forms is given in the
-\textit{Author's  Guidelines}.
+At the other end of the tests, where the data set sizes reach ranges of 100,000 to 5,000,000,
+each of the remaining sorting algorithms begins to diverge from each other in their time taken
+to sort the items. Merge sort and Quick sort stay very similar to one another with their results,
+up until 1,000,000 items. At this point, Quick sort shows itself to be slower at
+sorting the data set than Merge sort, although not by much. If more tests on
+even greater data sets were to be made, it is probable that we would see Quick sort
+progressively slower in it's run time than Merge sort.
 
+As for Radix and Shell sort, while both have up to that point performed similar to
+Merge and Quick sort, they both become slower than the others at the 200,000
+items in a data set range. Shell sorts 'curve' on the graph becomes a lot steeper,
+ a lot faster than Radix sorts does, and we see the point at which it gets incrementally
+more difficult for Shell sort to run on larger data sets in comparison to the other algorithms.
 
-and don't forget to end the environment with
-{figure*}, not {figure}!
- 
-There is one other similar construct environment, which is
-already set up
-for you; i.e. you must \textit{not} use
-a \texttt{{\char'134}newdef} command to
-create it: the \textbf{proof} environment.  Here
-is a example of its use:
-\begin{proof}
-Suppose on the contrary there exists a real number $L$ such that
-\begin{displaymath}
-\lim_{x\rightarrow\infty} \frac{f(x)}{g(x)} = L.
-\end{displaymath}
-Then
-\begin{displaymath}
-l=\lim_{x\rightarrow c} f(x)
-= \lim_{x\rightarrow c}
-\left[ g{x} \cdot \frac{f(x)}{g(x)} \right ]
-= \lim_{x\rightarrow c} g(x) \cdot \lim_{x\rightarrow c}
-\frac{f(x)}{g(x)} = 0\cdot L = 0,
-\end{displaymath}
-which contradicts our assumption that $l\neq 0$.
-\end{proof}
+A note to make about these tests, with particular attention to Radix sort, is that 
+their runtimes and performances will be directly affected by the device they are
+run upon. If the device begins to have difficulties in processing such large data
+sets, it is very possible that the runtime would be significantly slower than
+they would be on a more powerful machine, even if the previous results
+were practically identical with smaller data sets on a less powerful machine.
 
-Complete rules about using these environments and using the
-two different creation commands are in the
-\textit{Author's Guide}; please consult it for more
-detailed instructions.  If you need to use another construct,
-not listed therein, which you want to have the same
-formatting as the Theorem
-or the Definition\cite{salas:calculus} shown above,
-use the \texttt{{\char'134}newtheorem} or the
-\texttt{{\char'134}newdef} command,
-respectively, to create it.
+It is for this reason that it may be the curves become so much
+steeper so quickly with data sets at this size. However, regardless of the
+processing power of the machine and the impact it has upon the runtimes, it
+can still be taken as a valid result, since this report is comparing and contrasting
+the runtimes of these algorithms against each other. Therefore, these
+results can be considered a real life example of a scenario where they are
+used on a device requiring them, and which algorithm is still the 'best',
+ 'worst' and 'average' case, for ranges of data sets, small to large.
 
-\subsection*{A {\secit Caveat} for the \TeX\ Expert}
-Because you have just been given permission to
-use the \texttt{{\char'134}newdef} command to create a
-new form, you might think you can
-use \TeX's \texttt{{\char'134}def} to create a
-new command: \textit{Please refrain from doing this!}
-Remember that your \LaTeX\ source code is primarily intended
-to create camera-ready copy, but may be converted
-to other forms -- e.g. HTML. If you inadvertently omit
-some or all of the \texttt{{\char'134}def}s recompilation will
-be, to say the least, problematic.
+This particularily applies to Radix sort, as at the point where it is 
+processing sets of items in the million and higher ranges, the space
+complexity of the algorithm makes it difficult for some devices to cope with,
+resulting in a slower algorithm as the devices RAM is bloated and under strain. This report
+still considers this to give an accurate result, based on the 'real world' 
+example of how Radix sort compares to the other sorts with the
+same working environment.
+
+From analysing and discussing the resulting data from our tests, we can 
+see that the 'best sort' for a certain situation can be entirely situational.
+For example, it would be foolish to employ a Bubble sort or Selection sort
+on a data set larger than 1,000. It is at and after these points 
+that these algorithms become the worst to use for their time complexity.
+
+However, if presented with a much smaller size of items, such as one under
+200, it would be acceptable to use Bubble or Selection sort over Quick and Merge sort
+, although most likely preferable to implement Shell or Insertion sort, as
+they handle these smaller data sets better than any other algorithm tested, as seen in the results.
+
+At around the 50,000 items mark, there is a cross over point where it can safely
+be said that the size of the data set truly does make a difference. The
+simpler algorithms (Selection, Insertion, Bubble) runtime grow at such
+an exponential rate that it becomes pointless to use them. While previously,
+Quick, Merge and Radix sort were the worst case use for smaller data sets
+are now the much more time efficient options.
+
+From this we could conclude that the
+runtimes of each algorithm are directly connected to different sizes of
+data sets, and some algorithms handle different sizes of data sets much
+better (or worse) than others. This is not to say that one should never
+use a Quick sort on a smaller data set, however. In fact, it is potentially
+the best general purpose sort.
+
+When analysing the results of the smaller data sets below 1000, the difference in 
+the runtime between all of the algorithms is rather minimal, and Quick
+sort does not perform terribly. Assuming that the algorithms will not
+be run on a large quantity of smaller data sets, there would most 
+likely not be too much of a noticable difference in performance of
+an application.
+
+In the chance that this is the case though, multiple algorithms could be
+employed through the use of conditional statements. For example,
+when the data set is passed to the application, an if statement
+could check and see the size of the data set. If it is greater than
+100, then Quick sort may be applied. Otherwise, Insertion sort
+could be. This has often been the case with Quick sort in other
+applications, using the best algorithm for the task at hand dynamically.
+ For testing purpose, however, I felt it best to keep
+the two tested individually.
+
+The question may be raised, "Why not say the best average is 
+Merge Sort? Which did just as well, if not better, than Quick sort?".
+The answer to this is not in the time complexity, but in the space
+complexity. Merge sort uses more memory than Quick sort does.
+
+While Quick sort sorts items in-place, using only the original list
+of items provided and indexes to where to sort the items, 
+Merge sort requires another array in order to separate and 
+'merge' the data to be processed.
+
+Unless the device the
+ sorting algorithm is running on has enough memory to
+ handle this, Quick sort is the better choice for the best average
+case sorting algorithm. Plus, as previously stated, it's drawback
+with smaller data sets can be overcome with a conditional statement
+that processes smaller data sets with Insertion sort.
 
 \section{Conclusions}
-This paragraph will end the body of this sample document.
-Remember that you might still have Acknowledgments or
-Appendices; brief samples of these
-follow.  There is still the Bibliography to deal with; and
-we will make a disclaimer about that here: with the exception
-of the reference to the \LaTeX\ book, the citations in
-this paper are to articles which have nothing to
-do with the present subject and are used as
-examples only.
+
+The overall conclusion to take from these results are that the
+size of a data set directly corresponds to the runtime performance of
+an algorithm, and that no one algorithm is best suited for every
+single data set, but there is an average best case in QuickSort, 
+should an 'all-round' algorithm be required with little specification.
+
+A developer 
+should be aware of the differences in run time between the different types
+of algorithms and therefore selective of the algorithm they choose to implement 
+when using sorting in an application. They should select based upon their 
+expected data set sizes, their space requirements and be prepared
+to have conditional statements to choose the best algorithm for 
+a problem presented to the application.
+
 %\end{document}  % This is where a 'short' article might terminate
+
+
 
 %
 % The following two commands are all you need in the
 % initial runs of your .tex file to
 % produce the bibliography for the citations in your paper.
-\bibliographystyle{abbrv}
-\bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
+%\bibliographystyle{abbrv}
+%\bibliography{sorting_algorithms}  % sigproc.bib is the name of the Bibliography in this case
 % You must have a proper ".bib" file
 %  and remember to run:
 % latex bibtex latex latex
@@ -491,51 +443,49 @@ examples only.
 %
 %APPENDICES are optional
 %\balancecolumns
+
+\begin{thebibliography}{1}
+
+\bibitem{assignment} R. C. Shipman, {\em "CS21120: Data Structures and Algorithm Analysis Assignment 2 - Sorting}, 25th February 2014.
+
+\bibitem{complexity}
+Big-O Algorithm Complexity Cheat Sheet [webpage]. Available: http://bigocheatsheet.com/ Accessed: 12/03/14
+
+\bibitem{bigo}
+Big O notation - Wikipedia, the free encyclopedia [webpage]. Available: http://en.wikipedia.org/wiki/Big\_O\_notation Accessed: 12/03/14
+
+\bibitem{timec}
+Time complexity - Wikipedia, the free encyclopedia [webpage]. Available: http://en.wikipedia.org/wiki/Time\_complexity Accessed: 12/03/14
+
+  \end{thebibliography}
+
+
 \appendix
 %Appendix A
-\section{Headings in Appendices}
-The rules about hierarchical headings discussed above for
-the body of the article are different in the appendices.
-In the \textbf{appendix} environment, the command
-\textbf{section} is used to
-indicate the start of each Appendix, with alphabetic order
-designation (i.e. the first is A, the second B, etc.) and
-a title (if you include one).  So, if you need
-hierarchical structure
-\textit{within} an Appendix, start with \textbf{subsection} as the
-highest level. Here is an outline of the body of this
-document in Appendix-appropriate form:
 \subsection{Introduction}
 \subsection{The Body of the Paper}
-\subsubsection{Type Changes and  Special Characters}
-\subsubsection{Math Equations}
-\paragraph{Inline (In-text) Equations}
-\paragraph{Display Equations}
-\subsubsection{Citations}
-\subsubsection{Tables}
-\subsubsection{Figures}
-\subsubsection{Theorem-like Constructs}
-\subsubsection*{A Caveat for the \TeX\ Expert}
+\subsubsection{Environment \& Tools}
+\subsubsection{Methods}
+\subsubsection{Results}
+\subsubsection{Discussion}
 \subsection{Conclusions}
-\subsection{Acknowledgments}
-\subsection{Additional Authors}
-This section is inserted by \LaTeX; you do not insert it.
-You just add the names and information in the
-\texttt{{\char'134}additionalauthors} command at the start
-of the document.
+
 \subsection{References}
-Generated by bibtex from your ~.bib file.  Run latex,
-then bibtex, then latex twice (to resolve references)
-to create the ~.bbl file.  Insert that ~.bbl file into
-the .tex source file and comment out
-the command \texttt{{\char'134}thebibliography}.
-% This next section command marks the start of
-% Appendix B, and does not continue the present hierarchy
-\section{More Help for the Hardy}
-The acm\_proc\_article-sp document class file itself is chock-full of succinct
-and helpful comments.  If you consider yourself a moderately
-experienced to expert user of \LaTeX, you may find reading
-it useful but please remember not to change it.
+
+\section{Executive Summary}
+\subsection{Mission Statement}
+To test the runtimes of different sorting algorithms on data sets of small and large
+sizes  to see the performance of each algorithm and analyse the results using line graphs and discussion.
+\subsection{Methods}
+Testing the algorithms using averaged time recorded in nanoseconds on a
+singular device under similar circumstances for multiple tests and iterations. Recording the averaged run time results in a spreadsheet for analysis.
+\subsection{Outcomes}
+Concluding that the runtime of a sorting algorithm is affected by the size of a
+data set and that some algorithms are best suited for larger amounts of sets but bad
+for smaller sizes, and visa versa. Determining which algorithm could be best suited
+as a 'best average case' sorting algorithm when presented with any size of data set.
+
+
 \balancecolumns
 % That's all folks!
 \end{document}

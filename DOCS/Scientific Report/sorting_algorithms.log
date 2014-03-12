@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  5 MAR 2014 13:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  12 MAR 2014 03:22
 entering extended mode
 **D:/Users/James/University*Documents/Modules/CS211/SortingAlgorithmComparisons
 /DOCS/Scientific*Report/sorting_algorithms.tex
@@ -226,180 +226,126 @@ LaTeX Font Info:    ... okay on input line 31.
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks37
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 134.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 134.
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 134.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 87.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (10.71048pt too wide) in paragraph at lines 134--134
- []\eaddfnt lleipuner@researchlabs.org| 
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 135--135
-[][]\T1/aer/m/n/9 (Does NOT pro-duce the per-mis-sion block, copy-right
- []
-
-
-Underfull \hbox (badness 6032) in paragraph at lines 135--135
-\T1/aer/m/n/9 in-for-ma-tion nor page num-ber-ing). For use with
- []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 135.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Overfull \hbox (1.0793pt too wide) in paragraph at lines 136--142
-\T1/aer/m/it/9 Prepar-ing ACM SIG Pro-ceed-ings Us-ing L[]T[]X$\OT1/cmr/m/n/9 2
-[]$ \T1/aer/m/it/9 and BibT[]X\T1/aer/m/n/9 .
- []
-
-
-Underfull \vbox (badness 2680) has occurred while \output is active []
-
-
-Overfull \hbox (1.26794pt too wide) in paragraph at lines 158--159
-\T1/aer/m/n/9 H.4 [\T1/aer/bx/n/9 Information Sys-tems Ap-pli-ca-tions\T1/aer/m
-/n/9 ]: Mis-cel-la-neous;
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 182--182
-[][]\T1/aer/m/n/9 Two of these, the \T1/aett/m/n/9 \num-bero-fau-thors \T1/aer/
-m/n/9 and \T1/aett/m/n/9 \alig-nau-
+Overfull \hbox (11.87791pt too wide) in paragraph at lines 112--113
+\T1/aer/bx/n/9 LEM COM-PLEX-ITY\T1/aer/m/n/9 ]: Non-nu-mer-i-cal Al-go-rithms a
+nd Prob-
  []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
+<img/results_table.png, id=12, 657.45625pt x 324.21124pt>
+File: img/results_table.png Graphic file (type png)
 
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 238.
+<use img/results_table.png>
+Package pdftex.def Info: img/results_table.png used on input line 238.
+(pdftex.def)             Requested size: 241.91785pt x 119.29337pt.
 
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 253.
-
-
-LaTeX Warning: Citation `bowman:reasoning' on page \thepage  undefined on input
- line 279.
-
-
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 2
-79.
-
-
-LaTeX Warning: Citation `braams:babel' on page \thepage  undefined on input lin
-e 279.
-
-
-LaTeX Warning: Citation `herlihy:methodology' on page \thepage  undefined on in
-put line 279.
-
-
-LaTeX Warning: Citation `clark:pct' on page \thepage  undefined on input line 2
-81.
-
-
-LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 281.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 281.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 287.
-
-
-LaTeX Warning: Citation `Lamport:LaTeX' on page \thepage  undefined on input li
-ne 298.
-
-[2]
-\c@theorem=\count115
-
-Underfull \hbox (badness 1603) in paragraph at lines 394--398
-[]\T1/aer/m/n/9 This uses the \T1/aer/bx/n/9 the-o-rem \T1/aer/m/n/9 en-vi-ron-
-ment, cre-ated by the
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 238--239
+ [][] 
  []
 
-\c@definition=\count116
+<img/graph_all_tests.png, id=13, 1011.78pt x 495.8525pt>
+File: img/graph_all_tests.png Graphic file (type png)
 
-Overfull \hbox (15.60826pt too wide) detected at line 440
-\OML/cmm/m/it/9 l \OT1/cmr/m/n/9 = [] \OML/cmm/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm
-/m/it/9 x\OT1/cmr/m/n/9 ) = [] [] = [] \OML/cmm/m/it/9 g\OT1/cmr/m/n/9 (\OML/cm
-m/m/it/9 x\OT1/cmr/m/n/9 ) \OMS/cmsy/m/n/9  [] [] \OT1/cmr/m/n/9 = 0 \OMS/cmsy
-/m/n/9  \OML/cmm/m/it/9 L \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 ;
+<use img/graph_all_tests.png>
+Package pdftex.def Info: img/graph_all_tests.png used on input line 251.
+(pdftex.def)             Requested size: 241.91785pt x 118.55305pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 251--252
+ [][] 
  []
 
+[2 <D:/Users/James/University Documents/Modules/CS211/SortingAlgorithmCompariso
+ns/DOCS/Scientific Report/img/results_table.png> <D:/Users/James/University Doc
+uments/Modules/CS211/SortingAlgorithmComparisons/DOCS/Scientific Report/img/gra
+ph_all_tests.png>] <img/graph_smaller.png, id=21, 1001.7425pt x 493.845pt>
+File: img/graph_smaller.png Graphic file (type png)
 
-LaTeX Warning: Citation `salas:calculus' on page \thepage  undefined on input l
-ine 450.
+<use img/graph_smaller.png>
+Package pdftex.def Info: img/graph_smaller.png used on input line 268.
+(pdftex.def)             Requested size: 241.91785pt x 119.25615pt.
 
-
-("D:\Users\James\University Documents\Modules\CS211\SortingAlgorithmComparisons
-\DOCS\Scientific Report\sorting_algorithms.bbl"
-Overfull \hbox (4.79341pt too wide) in paragraph at lines 1--1
-\T1/aer/m/n/9 Additional au-thors: John Smith (The Thørväld Group, email:
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 268--269
+ [][] 
  []
 
+<img/graph_middle.png, id=22, 1011.78pt x 489.83pt>
+File: img/graph_middle.png Graphic file (type png)
+ <use img/graph_middle.png>
+Package pdftex.def Info: img/graph_middle.png used on input line 290.
+(pdftex.def)             Requested size: 241.91785pt x 117.11314pt.
 
-Overfull \hbox (22.39977pt too wide) in paragraph at lines 1--1
-\T1/aett/m/n/9 jsmith@affiliation.org\T1/aer/m/n/9 ) and Julius P. Kumquat (The
- Kumquat
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 290--291
+ [][] 
  []
 
-) [3]
-Overfull \vbox (88.95584pt too high) has occurred while \output is active []
+<img/graph_larger.png, id=23, 1008.76875pt x 494.84875pt>
+File: img/graph_larger.png Graphic file (type png)
 
+<use img/graph_larger.png>
+Package pdftex.def Info: img/graph_larger.png used on input line 310.
+(pdftex.def)             Requested size: 241.91785pt x 118.66797pt.
 
-[4
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 310--311
+ [][] 
+ []
+
+[3 <D:/Users/James/University Documents/Modules/CS211/SortingAlgorithmCompariso
+ns/DOCS/Scientific Report/img/graph_smaller.png> <D:/Users/James/University Doc
+uments/Modules/CS211/SortingAlgorithmComparisons/DOCS/Scientific Report/img/gra
+ph_middle.png> <D:/Users/James/University Documents/Modules/CS211/SortingAlgori
+thmComparisons/DOCS/Scientific Report/img/graph_larger.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (12.31912pt too wide) in paragraph at lines 480--482
+\T1/aer/m/n/9 Testing the al-go-rithms us-ing av-er-aged time recorded in nanos
+ec-
+ []
+
+[5
 
 ]
 ("D:\Users\James\University Documents\Modules\CS211\SortingAlgorithmComparisons
 \DOCS\Scientific Report\sorting_algorithms.aux") ) 
 Here is how much of TeX's memory you used:
- 2478 strings out of 493921
- 30493 string characters out of 3144875
- 90018 words of memory out of 3000000
- 5714 multiletter control sequences out of 15000+200000
- 61996 words of font info for 85 fonts, out of 3000000 for 9000
+ 2446 strings out of 493921
+ 30145 string characters out of 3144875
+ 87030 words of memory out of 3000000
+ 5699 multiletter control sequences out of 15000+200000
+ 50701 words of font info for 67 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,12n,28p,367b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,28p,367b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTe
 X 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cmextra/cmex9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmti7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
-t9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on sorting_algorithms.pdf (4 pages, 226657 bytes).
+e1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helveti
+c/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sorting_algorithms.pdf (5 pages, 257080 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 69 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
