@@ -92,20 +92,10 @@ This paper concerns the runtime comparissons of
 throughout computer science and software engineering.
 The algorithms in question are Bubble, Selection, Insertion,
 Shell, Radix, Merge and Quick sort. These are
-written and tested in Java.
-
-Each algorithm
-will be tested under similar running conditions on 18 data
-sets, each with a different number of items. The results
-of these tests will be analysed to see anything of
-note when these algorithms are compared. In particular,
-any cross-over points of algorithm runtimes, the fastest
-algorithms for different data set sizes and whether the
-size of a data set really makes a difference on an algorithms
-runtime.
-
-This report also attempts
-at selecting a 'best average case sorting algorithm'.
+written and tested in Java. Each algorithm is tested under
+similar conditions, and their results are compared to
+determine if there are any interesting cross-over points
+in their runtimes, and if there is a 'best suited' algorithm.
 \end{abstract}
 
 % A category with the (minimum) three required fields
@@ -157,7 +147,7 @@ to use up to 3GBs of RAM for each individual test.
 
 All algorithms and the 
 testing suite were written in Java, SDK 1.7.0\_51, using 
-theIntelliJ IDE for both writing and conducting the tests. All tests were
+the IntelliJ IDE for both writing and conducting the tests. All tests were
 run under similar conditions, where the device in use was only used for
 running the tests and nothing else in order to best
 represent each algorithms performance.
@@ -457,8 +447,7 @@ Big O notation - Wikipedia, the free encyclopedia [webpage]. Available: http://e
 \bibitem{timec}
 Time complexity - Wikipedia, the free encyclopedia [webpage]. Available: http://en.wikipedia.org/wiki/Time\_complexity Accessed: 12/03/14
 
-  \end{thebibliography}
-
+\end{thebibliography}
 
 \appendix
 %Appendix A
@@ -469,8 +458,8 @@ Time complexity - Wikipedia, the free encyclopedia [webpage]. Available: http://
 \subsubsection{Results}
 \subsubsection{Discussion}
 \subsection{Conclusions}
-
 \subsection{References}
+
 
 \section{Executive Summary}
 \subsection{Mission Statement}
@@ -484,8 +473,22 @@ Concluding that the runtime of a sorting algorithm is affected by the size of a
 data set and that some algorithms are best suited for larger amounts of sets but bad
 for smaller sizes, and visa versa. Determining which algorithm could be best suited
 as a 'best average case' sorting algorithm when presented with any size of data set.
+\begin{figure*}
+\centering
+\includegraphics[width=0.7\textwidth]{img/graph_all_tests.png}
+\caption{The test results expressed as a line graph}
 
+\includegraphics[width=0.7\textwidth]{img/graph_smaller.png}
+\caption{Smaller data sets and their results}
+
+\includegraphics[width=0.7\textwidth]{img/graph_middle.png}
+\caption{The data sets from the middle of this reports testing data}
+
+\includegraphics[width=0.7\textwidth]{img/graph_larger.png}
+\caption{The larger data sets and test results for applicable algorithms}
+\end{figure*}
 
 \balancecolumns
+\clearpage
 % That's all folks!
 \end{document}

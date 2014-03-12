@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  12 MAR 2014 03:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.11.17)  12 MAR 2014 18:01
 entering extended mode
 **D:/Users/James/University*Documents/Modules/CS211/SortingAlgorithmComparisons
 /DOCS/Scientific*Report/sorting_algorithms.tex
@@ -240,7 +240,7 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 87.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (11.87791pt too wide) in paragraph at lines 112--113
+Overfull \hbox (11.87791pt too wide) in paragraph at lines 102--103
 \T1/aer/bx/n/9 LEM COM-PLEX-ITY\T1/aer/m/n/9 ]: Non-nu-mer-i-cal Al-go-rithms a
 nd Prob-
  []
@@ -253,10 +253,10 @@ nd Prob-
 File: img/results_table.png Graphic file (type png)
 
 <use img/results_table.png>
-Package pdftex.def Info: img/results_table.png used on input line 238.
+Package pdftex.def Info: img/results_table.png used on input line 228.
 (pdftex.def)             Requested size: 241.91785pt x 119.29337pt.
 
-Overfull \hbox (1.91785pt too wide) in paragraph at lines 238--239
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 228--229
  [][] 
  []
 
@@ -264,34 +264,38 @@ Overfull \hbox (1.91785pt too wide) in paragraph at lines 238--239
 File: img/graph_all_tests.png Graphic file (type png)
 
 <use img/graph_all_tests.png>
-Package pdftex.def Info: img/graph_all_tests.png used on input line 251.
+Package pdftex.def Info: img/graph_all_tests.png used on input line 241.
 (pdftex.def)             Requested size: 241.91785pt x 118.55305pt.
 
-Overfull \hbox (1.91785pt too wide) in paragraph at lines 251--252
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 241--242
  [][] 
  []
+
+<img/graph_smaller.png, id=14, 1001.7425pt x 493.845pt>
+File: img/graph_smaller.png Graphic file (type png)
+
+<use img/graph_smaller.png>
+Package pdftex.def Info: img/graph_smaller.png used on input line 258.
+(pdftex.def)             Requested size: 241.91785pt x 119.25615pt.
+
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 258--259
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2 <D:/Users/James/University Documents/Modules/CS211/SortingAlgorithmCompariso
 ns/DOCS/Scientific Report/img/results_table.png> <D:/Users/James/University Doc
 uments/Modules/CS211/SortingAlgorithmComparisons/DOCS/Scientific Report/img/gra
-ph_all_tests.png>] <img/graph_smaller.png, id=21, 1001.7425pt x 493.845pt>
-File: img/graph_smaller.png Graphic file (type png)
-
-<use img/graph_smaller.png>
-Package pdftex.def Info: img/graph_smaller.png used on input line 268.
-(pdftex.def)             Requested size: 241.91785pt x 119.25615pt.
-
-Overfull \hbox (1.91785pt too wide) in paragraph at lines 268--269
- [][] 
- []
-
-<img/graph_middle.png, id=22, 1011.78pt x 489.83pt>
+ph_all_tests.png>] <img/graph_middle.png, id=22, 1011.78pt x 489.83pt>
 File: img/graph_middle.png Graphic file (type png)
- <use img/graph_middle.png>
-Package pdftex.def Info: img/graph_middle.png used on input line 290.
+
+<use img/graph_middle.png>
+Package pdftex.def Info: img/graph_middle.png used on input line 280.
 (pdftex.def)             Requested size: 241.91785pt x 117.11314pt.
 
-Overfull \hbox (1.91785pt too wide) in paragraph at lines 290--291
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 280--281
  [][] 
  []
 
@@ -299,10 +303,10 @@ Overfull \hbox (1.91785pt too wide) in paragraph at lines 290--291
 File: img/graph_larger.png Graphic file (type png)
 
 <use img/graph_larger.png>
-Package pdftex.def Info: img/graph_larger.png used on input line 310.
+Package pdftex.def Info: img/graph_larger.png used on input line 300.
 (pdftex.def)             Requested size: 241.91785pt x 118.66797pt.
 
-Overfull \hbox (1.91785pt too wide) in paragraph at lines 310--311
+Overfull \hbox (1.91785pt too wide) in paragraph at lines 300--301
  [][] 
  []
 
@@ -313,15 +317,37 @@ ph_middle.png> <D:/Users/James/University Documents/Modules/CS211/SortingAlgori
 thmComparisons/DOCS/Scientific Report/img/graph_larger.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-Overfull \hbox (12.31912pt too wide) in paragraph at lines 480--482
+
+Overfull \hbox (12.31912pt too wide) in paragraph at lines 469--471
 \T1/aer/m/n/9 Testing the al-go-rithms us-ing av-er-aged time recorded in nanos
 ec-
  []
 
+[4]
+File: img/graph_all_tests.png Graphic file (type png)
+ <use img/graph_all_tests.png>
+Package pdftex.def Info: img/graph_all_tests.png used on input line 478.
+(pdftex.def)             Requested size: 352.79846pt x 172.90028pt.
+File: img/graph_smaller.png Graphic file (type png)
+ <use img/graph_smaller.png>
+Package pdftex.def Info: img/graph_smaller.png used on input line 481.
+(pdftex.def)             Requested size: 352.79846pt x 173.9259pt.
+File: img/graph_middle.png Graphic file (type png)
+
+<use img/graph_middle.png>
+Package pdftex.def Info: img/graph_middle.png used on input line 484.
+(pdftex.def)             Requested size: 352.79846pt x 170.80028pt.
+File: img/graph_larger.png Graphic file (type png)
+ <use img/graph_larger.png>
+Package pdftex.def Info: img/graph_larger.png used on input line 487.
+(pdftex.def)             Requested size: 352.79846pt x 173.06374pt.
+
+
+LaTeX Warning: Float too large for page by 118.67403pt on input line 489.
+
 [5
 
-]
+] [6]
 ("D:\Users\James\University Documents\Modules\CS211\SortingAlgorithmComparisons
 \DOCS\Scientific Report\sorting_algorithms.aux") ) 
 Here is how much of TeX's memory you used:
@@ -343,9 +369,9 @@ c/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sorting_algorithms.pdf (5 pages, 257080 bytes).
+Output written on sorting_algorithms.pdf (6 pages, 258302 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
